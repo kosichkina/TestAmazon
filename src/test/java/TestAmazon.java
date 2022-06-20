@@ -43,7 +43,7 @@ public class TestAmazon {
     public void AmazonCheck2(){
         checkInStock();
         driver.findElement(By.xpath("//a[contains(@href, \"/gp/new-releases/shoes\")][contains(@class, \"a-link-normal\")]")).click();
-        driver.findElement(By.xpath("//div[contains(@id, \"B0B21W9XYT\")]")).click();
+        driver.findElement(By.id("p13n-asin-index-25")).click();
         WebElement buyNow = driver.findElement(By.xpath("//input[contains(@id, \"buy-now-button\")]"));
         Assert.assertTrue(buyNow.isDisplayed());
 
